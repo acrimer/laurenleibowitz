@@ -85,6 +85,10 @@ h1, h2, h3, h4, h5 {
 	font-weight: 700;
 }
 
+h2, h3, h4, h5 {
+	font-size: 1.2em;
+}
+
 p {
 	font-family: 'Oxygen', sans-serif;
 	font-size: 1.1em;
@@ -100,6 +104,13 @@ a {
 a:hover {
 	color: #4DB2FF;
 	text-decoration: none;
+}
+
+.horizCenter {
+	width: 100%;
+	background-color: #D6D6D6;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
 }
 
 /* 
@@ -155,7 +166,6 @@ header .headWrap {
 /* 
 	Nav
 	======================================================================
-
 */
 
 .nav {
@@ -179,4 +189,24 @@ header .headWrap {
 	text-align: center;
 	width: 24%;
 	display: inline-block;
+}
+
+/* 
+	Main Content
+	======================================================================
+*/
+
+.container {
+	min-height: 100%;
+	height: auto;
+}
+
+.main {
+	width: 50%;
+	margin: 10px auto 40px auto;
+}
+
+.main h2, .main p {
+	line-height: 1.2em;
+	padding-bottom: 10px;
 }
