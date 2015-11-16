@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*
+    Eric Meyer Reset
+    ======================================================================
+    Reset all elements on the page without default padding/margins, etc.
+    http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+    Box Sizing Reset
+    ======================================================================
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+    Apply a natural box layout model to all elements, but allowing
+    components to change if needed (use sparingly)
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+    Hand-coded goodness by Andrew starts here
+    ======================================================================
+*/
+
+/* 
+	Global
+	======================================================================
+*/
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+
+p {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #333;
+}
+
+a {
+	color: #278FDE;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #4DB2FF;
+	text-decoration: none;
+}
+
+/* 
+	Header
+	======================================================================
+*/
+header {
+	width: 100%;
+	text-align: center;
+}
+
+header .headWrap {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 70%;
+	min-width: 760px;
+	height: auto;
+	margin: 0px auto;
+	display: inline-block;
+}
+
+.headLeft {
+	padding-top: 37px;
+	padding-right: 10px;
+	width: 49%;
+	text-align: right;
+	display: inline-block;
+}
+
+.headLeft h1 {
+	font-size: 3em;
+	color: #333;
+	text-decoration: none;
+}
+
+.headLeft h1:hover{
+	color: #4DB2FF;
+}
+
+.headRight {
+	float: right;
+	width: 49%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#headShot {
+	width: 175px;
+	height: auto;
+	border-radius: 4px;
+}
+
+/* 
+	Nav
+	======================================================================
+
+*/
+
+.nav {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.nav hr.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.navItems {
+	width:50%;
+	margin: 0 auto;
+	padding: 5px 0px 5px 0px;
+}
+
+.navItem {
+	text-align: center;
+	width: 24%;
+	display: inline-block;
+}
