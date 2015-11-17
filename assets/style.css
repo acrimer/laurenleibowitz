@@ -102,12 +102,32 @@ html {
     .nav, .navItems {
       display: inline-block !important;
     }
+    
     .nav, .navItems, .navItem {
       width: 100% !important;
     }
+
+    .navItems {
+    	margin: 0px;
+    }
+
+    .navItem{
+    	margin: 8px 0px 8px 0px; 
+    }
+
     .main {
       width: 90% !important;
     }
+}
+
+@media only screen and (max-width: 900px){
+	.nav {
+		width: 100% !important;
+	}
+
+	.navItems {
+		width: 100% !important;
+	}
 }
 
 /* 
