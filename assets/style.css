@@ -215,6 +215,18 @@ header .headWrap {
 	padding-bottom: 10px;
 }
 
+.main .section {
+	margin-bottom: 20px;
+}
+
+.main .section p {
+	padding-bottom: 0px;
+}
+
+span.em {
+	font-style: italic;
+}
+
 /* 
 	CTA
 	======================================================================
