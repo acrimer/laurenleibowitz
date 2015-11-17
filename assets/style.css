@@ -90,7 +90,7 @@ h2, h3, h4, h5 {
 }
 
 p {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Andada', serif;
 	font-size: 1.1em;
 	font-weight: 400;
 	color: #333;
@@ -102,8 +102,12 @@ a {
 }
 
 a:hover {
-	color: #4DB2FF;
+	color: #61BBFF;
 	text-decoration: none;
+}
+
+footer p, .navItems p {
+	font-family: 'Oxygen', sans-serif;
 }
 
 .horizCenter {
@@ -147,7 +151,7 @@ header .headWrap {
 }
 
 .headLeft h1:hover{
-	color: #4DB2FF;
+	color: #61BBFF;
 }
 
 .headRight {
@@ -197,16 +201,73 @@ header .headWrap {
 */
 
 .container {
-	min-height: 100%;
+	min-height: 340px;
 	height: auto;
 }
 
 .main {
 	width: 50%;
-	margin: 10px auto 40px auto;
+	margin: 20px auto 40px auto;
 }
 
 .main h2, .main p {
 	line-height: 1.2em;
 	padding-bottom: 10px;
+}
+
+/* 
+	CTA
+	======================================================================
+*/
+
+.cta {
+	margin: 20px 0px 20px 0px;
+	width: 100%;
+}
+
+.cta #emailButton {
+	width: auto;
+	margin: 0 auto;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	border: 1px solid #278FDE;
+	border-radius: 2px;
+	color: #278FDE;
+}
+
+.cta #emailButton h2 {
+	padding-bottom: 0px;
+}
+
+.cta div:hover{
+	border: 1px solid #61BBFF !important;
+	border-radius: 2px;
+	background-color: #61BBFF;
+	color: #fff !important;
+}
+
+/* 
+	Contact
+	======================================================================
+*/
+
+.contact {
+	text-align: left;
+	list-style-type: none;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+.contact li {
+	margin-top: 5px;
+}
+
+.icon {
+	fill: #278FDE;
+	height: 1.4em;
+	margin-right: 5px;
+}
+
+.contact a:hover svg {
+	fill: #61BBFF;
 }
