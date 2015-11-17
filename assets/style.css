@@ -71,9 +71,44 @@ html {
 }
 
 /*
-    Hand-coded goodness by Andrew starts here
+    Responsive
     ======================================================================
 */
+
+@media only screen and (max-width: 760px){
+    header {
+      width: 100% !important;
+      padding-top: 10px !important;
+    }
+
+    header .headWrap {
+      padding-top: 0px !important;
+      min-width: 0px !important;
+    }
+
+    header .headLeft, header .headRight {
+      padding-top: 0px !important;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      position: initial;
+      margin-bottom: 5px;
+    }
+
+    header .headLeft h1 {
+      font-size: 3em;
+    }
+
+    .nav, .navItems {
+      display: inline-block !important;
+    }
+    .nav, .navItems, .navItem {
+      width: 100% !important;
+    }
+    .main {
+      width: 90% !important;
+    }
+}
 
 /* 
 	Global
@@ -221,6 +256,8 @@ header .headWrap {
 
 .main .section p {
 	padding-bottom: 0px;
+	text-indent: -10px;
+	margin-left: 10px;
 }
 
 span.em {
