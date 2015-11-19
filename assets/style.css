@@ -102,7 +102,7 @@ html {
     .nav, .navItems {
       display: inline-block !important;
     }
-    
+
     .nav, .navItems, .navItem {
       width: 100% !important;
     }
@@ -120,7 +120,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 761px) and (max-width: 900px){
 	.nav {
 		width: 100% !important;
 	}
@@ -140,7 +140,11 @@ h1, h2, h3, h4, h5 {
 	font-weight: 700;
 }
 
-h2, h3, h4, h5 {
+h2 {
+	font-size: 1.3em;
+}
+
+h3, h4, h5 {
 	font-size: 1.2em;
 }
 
@@ -176,6 +180,7 @@ footer p, .navItems p {
 	Header
 	======================================================================
 */
+
 header {
 	width: 100%;
 	text-align: center;
@@ -261,12 +266,12 @@ header .headWrap {
 }
 
 .main {
-	width: 50%;
+	width: 60%;
 	margin: 20px auto 40px auto;
 }
 
 .main h2, .main p {
-	line-height: 1.2em;
+	line-height: 1.3em;
 	padding-bottom: 10px;
 }
 
@@ -339,4 +344,62 @@ span.em {
 
 .contact a:hover svg {
 	fill: #61BBFF;
+}
+
+/* 
+	Resume
+	======================================================================
+*/
+
+.resSection {
+	width: 100%;
+	display: inline-block;
+}
+
+.resSectionHead {
+	width: 20%;
+	float: left;
+	display: inline-block;
+}
+
+.resSection .company h3{
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+
+.resSection .copy {
+	padding-left: 30px;
+}
+
+.resSection .info p{
+	padding-bottom: 0px;
+}
+
+.resSection .info, .resSection .copy, .resSection .job {
+	margin-bottom: 10px;
+}
+
+.resSection .job {
+	width: 80%;
+	float: right;
+	display: inline-block;
+}
+
+.resSection .copy ul {
+	list-style-type: square;
+}
+
+.resSection .copy li {
+	font-family: 'Andada', serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #333;
+	line-height: 1.3em;
+	padding-bottom: 5px;
+}
+
+.resWrap hr.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
