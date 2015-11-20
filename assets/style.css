@@ -84,6 +84,7 @@ html {
     header .headWrap {
       padding-top: 0px !important;
       min-width: 0px !important;
+      width: 100% !important;
     }
 
     header .headLeft, header .headRight {
@@ -97,6 +98,14 @@ html {
 
     header .headLeft h1 {
       font-size: 3em;
+    }
+
+    header .headRight {
+    	padding-left: 0px;
+    }
+
+    .anchor {
+    	top: 0px;
     }
 
     .nav, .navItems {
@@ -117,6 +126,36 @@ html {
 
     .main {
       width: 90% !important;
+    }
+
+    .resSectionHead {
+    	width: 100% !important;
+    	float: left;
+    	display: inline-block;
+    }
+
+    .resSection .job {
+    	width: 100% !important;
+    	float: left;
+    	display: inline-block;
+    }
+
+    .sticky {
+    	display: none !important;
+    }
+
+    .replacing {
+    	position: fixed;
+    	top: 0;
+    	right: 0;
+    	z-index: 100;
+    	display: block !important;
+    }
+
+    .replacing svg {
+    	fill: #D6D6D6;
+    	fill-opacity: 0.6;
+    	height: 50px;
     }
 }
 
@@ -149,6 +188,13 @@ h3, h4, h5 {
 }
 
 p {
+	font-family: 'Andada', serif;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: #333;
+}
+
+li {
 	font-family: 'Andada', serif;
 	font-size: 1.1em;
 	font-weight: 400;
@@ -251,8 +297,36 @@ header .headWrap {
 
 .navItem {
 	text-align: center;
-	width: 24%;
+	width: 32%;
 	display: inline-block;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	background-color: rgba(255,255,255,0.85);
+}
+
+.spacing {
+	height: 63px;
+}
+
+#hamburger {
+	display: none;
+}
+
+#mobileNav {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background-color: #fff;
+	height: auto;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: none;
 }
 
 /* 
@@ -289,6 +363,27 @@ span.em {
 	font-style: italic;
 }
 
+.sectionWrap {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#odd {
+	background-color: #fff;
+}
+
+#even {
+	background-color: #F7F7F7;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -63px;
+	visibility: hidden;
+}
+
 /* 
 	CTA
 	======================================================================
@@ -313,11 +408,21 @@ span.em {
 	padding-bottom: 0px;
 }
 
+.cta #ctaArrows {
+	display: inline;
+	height: 1.2em;
+	fill: #278FDE;
+}
+
 .cta div:hover{
 	border: 1px solid #61BBFF !important;
 	border-radius: 2px;
 	background-color: #61BBFF;
 	color: #fff !important;
+}
+
+.cta div:hover #ctaArrows{
+	fill: #fff !important;
 }
 
 /* 
@@ -328,8 +433,8 @@ span.em {
 .contact {
 	text-align: left;
 	list-style-type: none;
-	font-size: 1.3em;
-	line-height: 1.5em;
+	font-size: 1.1em;
+	line-height: 1.3em;
 }
 
 .contact li {
@@ -386,7 +491,7 @@ span.em {
 }
 
 .resSection .copy ul {
-	list-style-type: square;
+	list-style-type: none;
 }
 
 .resSection .copy li {

@@ -1,6 +1,9 @@
 RewriteEngine On
 RewriteBase / 
 
+RewriteCond %{HTTP_HOST}  ^www.laurenleibowitz.com [NC]
+RewriteRule ^(.*) http://laurenleibowitz.com/$1 [L,R=301]
+
 # redirect html pages to the root domain
 RewriteRule ^index\.html$ / [NC,R,L]
 
