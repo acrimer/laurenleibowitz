@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- website by andrew crimer, andrewcrimer.net -->
+	<title>Lauren Leibowitz</title>
+	<link rel="stylesheet" href="/assets/style.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Andada|Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-74266802-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script src="/assets/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+		var year = (new Date()).getFullYear();
+		$(document).ready(function(){
+			document.getElementById('year').innerHTML = year.toString();
+			$(window).scroll(function () {
+		 	   	if ($(window).scrollTop() > 214) {
+		    	  $('#navsticker').addClass('sticky');
+		    	  $('#spacer').addClass('spacing');
+		    	  $('#hamburger').addClass('replacing');
+		    	}
+		   		if ($(window).scrollTop() < 214) {
+		      	  $('#navsticker').removeClass('sticky');
+		      	  $('#spacer').removeClass('spacing');
+		      	  $('#hamburger').removeClass('replacing');
+		    	}
+		  	});
+			$('a[href^="#"]').on('click',function (e) {
+			    e.preventDefault();
+			    var target = this.hash;
+			    var $target = $(target);
+			    $('html, body').stop().animate({
+			        'scrollTop': $target.offset().top
+			    }, 900, 'swing', function () {
+			        window.location.hash = target;
+			    });
+			});
+			$("#hamburger").click(function(){
+				$("#mobileNav").slideToggle();
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="headWrap">
+			<div class="headLeft">
+				<a href="http://laurenleibowitz.com"><h1>LAUREN<br>LEIBOWITZ</h1></a>
+			</div>
+			<div class="headRight">
+				<img id="headShot" src="/assets/lauren-leibowitz.jpg">
+				<!--photo cred: jessica leibowitz-->
+			</div>
+		</div>
+	</header>
+	<div id="navsticker">
+		<div class="nav">
+			<hr class="divider">
+			<div class="navItems">
+				<div class="navItem">
+					<p><a href="#about">About</a></p>
+				</div>
+				<div class="navItem">
+					<p><a href="#clips">Clips</a></p>
+				</div>
+				<div class="navItem">
+					<p><a href="#contact">Contact</a></p>
+				</div>
+			</div>
+			<hr class="divider">
+		</div>
+	</div>
+	<div id="hamburger">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 800 800" xml:space="preserve">
+		<path d="M733.4,183c0,23.4-9.5,44.5-24.8,59.8s-36.5,24.8-59.8,24.8H156.5c-46.7,0-84.6-37.9-84.6-84.6
+			c0-23.4,9.5-44.5,24.8-59.8c15.3-15.3,36.5-24.8,59.8-24.8h492.3C695.5,98.4,733.4,136.2,733.4,183z"/>
+		<path d="M730.8,400c0,23.4-9.5,44.5-24.8,59.8c-15.3,15.3-36.5,24.8-59.8,24.8H153.8c-46.7,0-84.6-37.9-84.6-84.6
+			c0-23.4,9.5-44.5,24.8-59.8c15.3-15.3,36.5-24.8,59.8-24.8h492.3C692.9,315.4,730.8,353.3,730.8,400z"/>
+		<path d="M733.4,625.6c0,23.4-9.5,44.5-24.8,59.8s-36.5,24.8-59.8,24.8H156.5c-46.7,0-84.6-37.9-84.6-84.6
+			c0-23.4,9.5-44.5,24.8-59.8c15.3-15.3,36.5-24.8,59.8-24.8h492.3C695.5,541,733.4,578.9,733.4,625.6z"/>
+		</svg>
+	</div>
+	<div id="mobileNav">
+		<div class="navItems">
+				<div class="navItem">
+					<p><a href="#about">About</a></p>
+				</div>
+				<div class="navItem">
+					<p><a href="#clips">Clips</a></p>
+				</div>
+				<div class="navItem">
+					<p><a href="#contact">Contact</a></p>
+				</div>
+			</div>
+	</div>
+	<div id="spacer">
+	</div>
+	<div class="container">
+		<div class="sectionWrap" id="odd">
+			<a class="anchor" id="about"></a>
+			<div class="main">
+				<h2>About Lauren</h2>
+				<p>I'm Lauren Leibowitz, Entertainment Editor at <a href="http://thrillist.com/entertainment/">Thrillist</a>. In my spare time, I like reading books (fiction and non-), riding bikes (road and stationary), and streaming television (all kinds). In past lives, I've been a copy editor for <a href="http://nymag.com/">NYMag.com</a>, where I specialized in <a href="http://www.vulture.com/">Vulture</a> content; done blogging stints for Vulture and the <a href="http://www.huffingtonpost.com/style/">Huffington Post's Style vertical</a>; contributed <a href="http://nymag.com/restaurants/">restaurant and bar listings</a> for New York Magazine's website; written features for <a href="http://mic.com/">Mic.com</a>, <a href="http://bedfordandbowery.com/">Bedford & Bowery</a>, <a href="http://www.teenvogue.com/">TeenVogue.com</a>, and <a href="http://thecreatorsproject.vice.com/en_us">the Creators Project</a>; and copyedited for a diverse roster of clients, including <a href="http://www.eater.com/">Eater.com</a>, <a href="http://luckypeach.com/">Lucky Peach</a>, and various book authors.</p>
+				<div class="cta">
+					<a href="mailto:lauren.leibowitz@gmail.com">
+					<div id="emailButton">
+						<h2>Email me to pitch editing or writing projects <svg version="1.1" id="ctaArrows" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 800 800" xml:space="preserve">
+						<polygon points="420.5,464.2 250.1,800 94.7,800 267.8,464.2 94.7,128.4 250.1,128.4 "/>
+						<polygon points="705.3,464.2 534.9,800 379.5,800 552.6,464.2 379.5,128.4 534.9,128.4 "/>
+						</svg></h2>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="sectionWrap" id="even">
+			<a class="anchor" id="clips"></a>
+			<div class="main">
+				<h2>Clips</h2>
+				<div class="section">
+					<p>Vulture | <a href="http://www.vulture.com/2015/07/open-letter-to-hollywood-from-copy-editor.html">An Open Letter From a Copy Editor to Hollywood Title-Makers</a></p>
+					<p>Vulture | <a href="http://www.vulture.com/tv/the-last-man-on-earth/"><span class="em">The Last Man on Earth</span> recaps</a></p>
+					<p>Vulture | <a href="http://www.vulture.com/2015/10/izombie-veronica-mars-crossovers.html">4 <span class="em">iZombie&mdash;Veronica Mars</span> Crossovers You Might Have Missed</a></p>
+					<p>New York | <a href="http://nymag.com/listings/restaurant/the-finch/">The Finch restaurant listing</a></p>
+					<p>Mic | <a href="http://mic.com/articles/109768/what-the-most-romantic-restaurant-in-new-york-city-reveals-about-modern-love">What the "Most Romantic Restaurant" in New York City Reveals About Love</a></p>
+					<p>Bedford & Bowery | <a href="http://bedfordandbowery.com/2015/01/mission-danny-bowien-for-breakfast-lunch-and-dinner/">Danny Bowien for Breakfast, Lunch, and Dinner</a></p>
+					<p>TeenVogue | <a href="http://www.teenvogue.com/story/moving-childhood-house">Does Letting Go of a Childhood Home Also Mean Letting Go of Your Childhood?</a></p>
+					<p>HuffPost Style | <a href="http://www.huffingtonpost.com/2013/10/17/nina-garcia-models_n_4110009.html">Nina Garcia: It's Hard to Find Regular-Sized, Healthy Models in Fashion</a></p>
+					<p>HuffPost Style | <a href="http://www.huffingtonpost.com/2013/09/23/bruce-springsteen-born-in-the-usa-photos_n_3975274.html">10 Ways Bruce Springsteen Dressed Like the Ultimate Boss</a></p>
+					<p>HuffPost Style | <a href="http://www.huffingtonpost.com/2013/10/01/rent-the-runway-app_n_4022970.html">Rent the Runway App Allows You to Match Your Dress to Anything</a></p>
+				</div>
+				<h2>Editing</h2>
+				<div class="section">
+					<p>Vulture | <a href="http://www.vulture.com/2014/10/moma-henri-matisse-review-dont-miss.html">Post-Macho God: Matisse's <span class="em">Cut-Outs</span> Are World-Historically Gorgeous</a> by Jerry Saltz</p>
+					<p><span class="em">Won a National Magazine Award (ASME) in the Columns & Commentary category</span></p>
+					<p>Eater | <a href="http://www.vulture.com/2014/10/moma-henri-matisse-review-dont-miss.html">Eater Upsell podcast transcriptions</a></p>
+					<p>Lucky Peach | <a href="https://store.lky.ph/product/13-feel-the-joy/">No. 13: Feel the Joy</a> (Winter 2014)</p>
+					<p><a href="http://www.amazon.com/The-Orphans-Trilogy-Volume/dp/099630200X">Matthew Sullivan | <span class="em">The Orphans</span></p>
+					<p><a href="http://howtobike.info/">Matthew Schoolfield | <span class="em">How to Bike</span></a></p>
+				</div>
+				<h2>More</h2>
+				<div class="section">
+					<p><a href="http://nymag.com/author/Lauren%20Leibowitz/">NYMag.com</a></p>
+					<p><a href="http://mic.com/profiles/184212/lauren-leibowitz">Mic.com</a></p>
+					<p><a href="http://www.huffingtonpost.com/lauren-leibowitz/">Huffington Post</a></p>
+					<p><a href="http://www.teenvogue.com/contributor/lauren-leibowitz">TeenVogue.com</a></p>
+					<p><a href="http://bedfordandbowery.com/author/lauren-leibowitz/">Bedford & Bowery</a></p>
+					<p><a href="http://thecreatorsproject.vice.com/tcp/tcpArticle/author/GalleryImage/2/author_id/laurenleibowitz">The Creators Project</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="sectionWrap" id="odd">
+			<a class="anchor" id="contact"></a>
+			<div class="main">
+				<h2>Contact Lauren</h2>
+				<ul class="contact">
+					<li><a href="https://twitter.com/lleibowitzz">
+							<svg version="1.1" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="-281 373 48 48" style="enable-background:new -281 373 48 48;" xml:space="preserve" class="icon">
+								<path d="M-241.8,397c-1.1,0.5-2.3,0.8-3.6,1c1.3-0.8,2.3-2,2.7-3.5c-1.2,0.7-2.5,1.2-4,1.5c-1.1-1.2-2.8-2-4.6-2
+								c-3.4,0-6.2,2.8-6.2,6.2c0,0.5,0.1,1,0.2,1.4c-5.2-0.3-9.8-2.7-12.9-6.5c-0.5,0.9-0.8,2-0.8,3.1c0,2.2,1.1,4.1,2.8,5.2
+								c-1,0-2-0.3-2.8-0.8c0,0,0,0.1,0,0.1c0,3,2.2,5.6,5,6.1c-0.5,0.1-1.1,0.2-1.6,0.2c-0.4,0-0.8,0-1.2-0.1c0.8,2.5,3.1,4.3,5.8,4.3
+								c-2.1,1.7-4.8,2.7-7.8,2.7c-0.5,0-1,0-1.5-0.1c2.8,1.8,6,2.8,9.6,2.8c11.5,0,17.8-9.5,17.8-17.8c0-0.3,0-0.5,0-0.8
+								C-243.7,399.4-242.6,398.3-241.8,397z"/>
+					</svg> lleibowitzz</a></li>
+					<li><a href="https://www.facebook.com/leibowitzz">
+							<svg version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 					viewBox="-281 373 48 48" style="enable-background:new -281 373 48 48;" xml:space="preserve" class="icon">
+								<path d="M-247.9,381.4c0,0-3.7,0-6.2,0c-3.7,0-7.7,1.5-7.7,6.8c0,1.8,0,3.6,0,5.6h-4.2v6.7h4.4v19.4h8v-19.5h5.3
+								l0.5-6.6h-5.9c0,0,0-2.9,0-3.8c0-2.1,2.2-2,2.3-2c1,0,3.1,0,3.6,0L-247.9,381.4L-247.9,381.4L-247.9,381.4z"/>
+					</svg> Lauren Leibowitz</a></li>
+					<li><a href="https://www.instagram.com/lleibowitzz/">
+							<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="-281 373 48 48" style="enable-background:new -281 373 48 48;" xml:space="preserve" class="icon">
+								<path d="M-246.2,388.4h-21.6c-2,0-3.6,1.6-3.6,3.6v21.9c0,2,1.6,3.6,3.6,3.6h21.6c2,0,3.6-1.6,3.6-3.6V392
+								C-242.6,390-244.2,388.4-246.2,388.4z M-251.1,402.9c0,3.3-2.7,5.9-5.9,5.9c-3.3,0-5.9-2.7-5.9-5.9c0-1,0.2-1.9,0.7-2.7
+								c1-1.9,3-3.2,5.3-3.2c2.3,0,4.3,1.3,5.3,3.2C-251.3,401-251.1,402-251.1,402.9z M-245.8,412.8c0,0.8-0.7,1.5-1.5,1.5h-19.3
+								c-0.8,0-1.5-0.7-1.5-1.5v-12.6h2.5c-0.3,0.9-0.4,1.8-0.4,2.7c0,5,4,9,9,9c5,0,9-4,9-9c0-1-0.2-1.9-0.4-2.7h2.6L-245.8,412.8
+								L-245.8,412.8z M-245.8,395.5c0,0.8-0.7,1.5-1.5,1.5h-2.3c-0.8,0-1.5-0.7-1.5-1.5V393c0-0.7,0.4-1.2,1-1.4h2.7
+								c0.8,0,1.5,0.7,1.5,1.5L-245.8,395.5L-245.8,395.5z"/>
+					</svg> lleibowitzz</a></li>
+					<li><a href="https://www.linkedin.com/in/leibowitz">
+							<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 	viewBox="-281 373 48 48" style="enable-background:new -281 373 48 48;" xml:space="preserve" class="icon">
+								<path d="M-268.1,386.8c-2.1,0-3.5,1.4-3.4,3.3c0,1.8,1.3,3.2,3.4,3.2c2.1,0,3.5-1.5,3.5-3.2
+								C-264.7,388.2-266,386.8-268.1,386.8z M-271.4,417.9h6.5v-22.2h-6.5V417.9z M-247.4,396c-2.1,0-4.2-0.4-6.4,3.1h-0.1l-0.1-3.4h-5.7
+								c0.1,1.8,0.1,4.6,0.1,7.2v15h6.5v-12.8c0-0.6,0.1-1.2,0.3-1.6c0.4-1.2,1.5-2.4,3.3-2.4c2.3,0,3.3,1.8,3.3,4.5v12.3h6.5v-13.2
+								C-239.9,398.6-243.1,396-247.4,396z"/>
+					</svg> Lauren Leibowitz</a></li>
+					<li><a href="mailto:lauren.leibowitz@gmail.com">
+							<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 					viewBox="-281 373 48 48" style="enable-background:new -281 373 48 48;" xml:space="preserve" class="icon">
+								<path d="M-273.6,396v21.2h33.2V396H-273.6z M-272.1,397.8l13.2,8.9l-13.2,9.1V397.8z M-269.1,415.8l11.1-7.9l1,0.6
+								l0.9-0.6l11,7.9H-269.1z M-242.1,415.8l-13.3-9.1l13.3-8.9V415.8z"/>
+					</svg> lauren.leibowitz@gmail.com</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="sectionWrap" id="odd">
+			<div class="main">
+				<div class="cta">
+					<a href="mailto:lauren.leibowitz@gmail.com">
+					<div id="emailButton">
+						<h2>Email me to pitch editing or writing projects <svg version="1.1" id="ctaArrows" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 viewBox="0 0 800 800" xml:space="preserve">
+						<polygon points="420.5,464.2 250.1,800 94.7,800 267.8,464.2 94.7,128.4 250.1,128.4 "/>
+						<polygon points="705.3,464.2 534.9,800 379.5,800 552.6,464.2 379.5,128.4 534.9,128.4 "/>
+						</svg></h2>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<footer>
+	<div class="horizCenter">
+		<h2>&copy; <span id="year"></span> Lauren Leibowitz. 
+	</div>
+</footer>
+</html>
